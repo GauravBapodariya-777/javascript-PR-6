@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        class subject {
+            subject = () => {
+                var Physics = parseInt(prompt("Enter mark of Physics :- "));
+                var Chemistrya = parseInt(prompt("Enter mark of Chemistry :- "));
+                var Biology = parseInt(prompt("Enter mark of Biology :- "));
+                var Mathematics = parseInt(prompt("Enter mark of Mathematics :- "));
+                var Computer = parseInt(prompt("Enter mark of Computer :- "));
+                var ans = (Physics + Chemistrya + Biology + Mathematics + Computer)/5;
+                console.log(ans + "%");
+                if(ans>90 && ans<100){
+                    console.log("A");
+                }else if(ans>80 && ans<89){
+                    console.log("B");
+                }else if(ans>70 && ans<79){
+                    console.log("C");
+                }else if(ans>60 && ans<69){
+                    console.log("D");
+                }else if(ans>40 && ans<59){
+                    console.log("E");
+                }else{
+                    console.log("F");
+                }
+            }
+        }
+        var sub = new subject;
+        sub.subject();
+    </script>
+</body>
+
+</html>
